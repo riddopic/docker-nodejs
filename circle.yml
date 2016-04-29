@@ -20,7 +20,6 @@ dependencies:
     - make build TAG=v4.4.3
     - make build TAG=v5.11.0
     - make build TAG=v6.0.0
-      parallel: true
     - docker images
 
 test:
@@ -30,7 +29,6 @@ test:
     - make test TAG=v4.4.3
     - make test TAG=v5.11.0
     - make test TAG=v6.0.0
-      parallel: true
 
 deployment:
   hub:
@@ -42,4 +40,3 @@ deployment:
       - make push TAG=v4.4.3
       - make push TAG=v5.11.0
       - make push TAG=v6.0.0
-        parallel: true

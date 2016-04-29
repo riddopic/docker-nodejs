@@ -74,7 +74,7 @@ test:
 		bats test/nodejs.bats; \
 	fi
 
-.build: . $(TAG) $(DEPS)
+.build: . $(DEPS)
 	docker build -t "$(REGISTRY)/$(REPOSITORY):$(TAG)" -f "versions/$(TAG)/Dockerfile" .
 ifeq "$(TAG)" "$(LATEST_TAG)"
 	docker tag -f "$(REGISTRY)/$(REPOSITORY):$(TAG)" "$(REGISTRY)/$(REPOSITORY):latest"
