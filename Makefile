@@ -62,9 +62,6 @@ push:
 		for tag in $(PUSH_TAGS); do \
 			docker tag -f "$(REGISTRY)/$(REPOSITORY):$(TAG)" "$${registry}/$(REPOSITORY):$${tag}"; \
 			docker push "$${registry}/$(REPOSITORY):$${tag}"; \
-			if [ "$${tag}" -eq "${LATEST_TAG}" ]; then \
-				docker tag -f "$(REGISTRY)/$(REPOSITORY):$${tag}" "$(REGISTRY)/$(REPOSITORY):latest"; \
-			fi; \
 		done \
 	done
 
