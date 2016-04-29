@@ -1,0 +1,2 @@
+
+LATEST_TAG = v6.0.0

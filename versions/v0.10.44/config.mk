@@ -1,0 +1,4 @@
+
+export NODEJS_VERSION=v0.10.44
+export NPM_VERSION=2
+export CFLAGS="-D__USE_MISC"

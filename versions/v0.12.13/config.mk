@@ -1,0 +1,4 @@
+
+export NODEJS_VERSION=v0.12.13
+export NPM_VERSION=2
+export CFLAGS

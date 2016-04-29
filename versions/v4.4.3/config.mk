@@ -1,0 +1,4 @@
+
+export NODEJS_VERSION=v4.4.3
+export NPM_VERSION=2
+export CFLAGS
